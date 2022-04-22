@@ -69,8 +69,8 @@ footer{
     color: whitesmoke;
 }
 #btnRemove{
-    background: #58004c;
-    color: white;
+    background: #ca00af;
+    color: rgb(255, 255, 255);
     border: none;
     margin-left: 15px;
     width: 40px;
@@ -83,7 +83,7 @@ footer{
     cursor: pointer;
 }
 #btnRemove:hover{
-    background: #b60000;
+    background: #f50000;
     color: white;
     transform: scale(1.1);
     transition: 0.2s;

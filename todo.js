@@ -1,7 +1,7 @@
 const btnAdd = document.getElementById('btnAdd');
 const textSquare = document.getElementById('textSquare');
 const getDiv =  document.getElementById('newDiv');
-const btnDeleteAll = document.getElementById('btnDeleteAll').onclick = () => {document.location.reload()};
+
 
 //let btnRemove = document.getElementById("btnRemove");
 
@@ -18,6 +18,8 @@ btnAdd.onclick = (e) => {
     if(c >= 5){
         //btnAdd.style.display = "none";
         btnAdd.disabled = true;
+        btnAdd.style.backgroundColor = '#d471c7';
+        btnAdd.style.color = 'whitesmoke';
     }
 
     let newDiv = document.createElement('input');
@@ -37,6 +39,8 @@ btnAdd.onclick = (e) => {
         c -= 1;
         pTest.innerHTML = `5/${c}`;
         btnAdd.disabled = false;
+        btnAdd.style.backgroundColor = '#ca00af';
+        btnAdd.style.color = 'rgb(255, 255, 255)';
     }
     //###############################
 
@@ -45,6 +49,10 @@ btnAdd.onclick = (e) => {
 
 
 }
+const btnDeleteAll = document.getElementById('btnDeleteAll').onclick = () => {
+    document.location.reload()
+    //btnRemove.remove();
+};
 
 
 
