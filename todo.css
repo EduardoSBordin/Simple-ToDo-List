@@ -1,21 +1,43 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: whitesmoke;
+    background: #750066;
     text-align: center;
     justify-content: center;
     display: flex;
     max-width: 100%;
 }
 i{
-    color: red;
+    font-size: 15pt;
+}
+#btnAdd , #btnDeleteAll{
+    background: #ca00af;
+    color: rgb(255, 255, 255);
+    border: none;
+    margin: 10px;
+    margin-top: 20px;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+#btnDeleteAll:hover{
+    background-color: white;
+    color: rgb(0, 157, 236);
+    transform: scale(1.1);
+}
+#btnAdd:hover{
+    background-color: white;
+    color: rgb(0, 236, 130);
+    transform: scale(1.1);
 }
 #container {
 
     border-radius: 50px;
-    background: #e8e8e8;
-    box-shadow: -20px -20px 60px #c5c5c5,
-        20px 20px 60px #ffffff;
+    background: #750066;
+    box-shadow:  -20px -20px 60px #630057,
+             20px 20px 60px #870075;
     max-width: 100%;
     width: 500px;
     height: 500px;
@@ -23,27 +45,36 @@ i{
     margin-top: 80px;
 }
 #newDiv{
-    background-color: rgb(216, 216, 216);
-    width: 300px;
-    height: 30px;
+    background-color: #c700ad;
+    width: 70%;
+    height: 20px;
     margin: 0 auto;
-    margin-top: 15px;
+    margin-top: 30px;
     border: none;
     border-radius: 10px;
     outline: none;
+    color:#ffffff;
+    font-size: 14pt;
+    padding: 10px;
+}
+#newDiv::placeholder{
+    color: whitesmoke;
 }
 #btnRemove{
-    background-color: black;
+    background: #58004c;
     color: white;
     border: none;
-    margin-left: 10px;
-    width: 80px;
-    height: 30px;
-    border-radius: 10px;
-    transition: 0.2s;
+    margin-left: 15px;
+    width: 40px;
+    display: inline-block;
+    height: 40px;
+    padding: 0px;
+    border-radius: 50%;
+    transition: 0.3s;
+    text-align: center;
 }
 #btnRemove:hover{
-    background-color: slategray;
+    background: #b60000;
     color: white;
     transform: scale(1.1);
     transition: 0.2s;

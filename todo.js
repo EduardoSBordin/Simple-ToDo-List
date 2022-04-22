@@ -14,7 +14,7 @@ btnAdd.onclick = (e) => {
 
     // Delete button
     let btnRemove = document.createElement('button');
-    btnRemove.innerHTML = 'Excluir';
+    btnRemove.innerHTML = `<i class="fa-solid fa-trash"></i>`;
     btnRemove.id = 'btnRemove';
 
     btnRemove.onclick = () =>{
@@ -27,10 +27,5 @@ btnAdd.onclick = (e) => {
     textSquare.appendChild(btnRemove);  
 }
 
-function btnDel(){
-
-    
-
-}
 
 
