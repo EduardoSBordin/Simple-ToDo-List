@@ -40,10 +40,11 @@ i{
     width: 80px;
     height: 30px;
     border-radius: 10px;
-    transition: 0.4s;
+    transition: 0.2s;
 }
 #btnRemove:hover{
     background-color: slategray;
     color: white;
     transform: scale(1.1);
+    transition: 0.2s;
 }
