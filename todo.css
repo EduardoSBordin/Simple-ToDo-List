@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: #750066;
+    background: #f7f7f7;
     text-align: center;
     justify-content: center;
     display: flex;
@@ -9,6 +9,13 @@ body {
 }
 i{
     font-size: 15pt;
+}
+footer{
+    background-color: #c700ac00;
+    width: 80%;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: -10px;
 }
 #btnAdd , #btnDeleteAll{
     background: #ca00af;
@@ -21,6 +28,7 @@ i{
     height: 40px;
     border-radius: 50%;
     transition: 0.3s;
+    display: inline-block;
 }
 #btnDeleteAll:hover{
     background-color: white;
@@ -35,9 +43,8 @@ i{
 #container {
 
     border-radius: 50px;
-    background: #750066;
-    box-shadow:  -20px -20px 60px #630057,
-             20px 20px 60px #870075;
+    background: #f7f7f7;
+    box-shadow: 5px 5px 50px 5px #d2d2d2;
     max-width: 100%;
     width: 500px;
     height: 500px;
@@ -78,4 +85,16 @@ i{
     color: white;
     transform: scale(1.1);
     transition: 0.2s;
+}
+#textSquare{
+    background-color: #58004c00;
+    height: 380px;
+    width: 95%;
+    margin: 0 auto;
+}
+#pTest{
+    text-align: center;
+    color: #ca00af;
+    font-size: 14pt;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
