@@ -3,8 +3,7 @@ const textSquare = document.getElementById('textSquare');
 const getDiv =  document.getElementById('newDiv');
 const btnDeleteAll = document.getElementById('btnDeleteAll').onclick = () => {document.location.reload()};
 
-let btnRemove = document.getElementById("btnRemove");
-
+//let btnRemove = document.getElementById("btnRemove");
 
 let pTest = document.getElementById('pTest');
 let c = 0;
@@ -17,7 +16,8 @@ btnAdd.onclick = (e) => {
     pTest.innerHTML = `5/${c}`;
 
     if(c >= 5){
-        btnAdd.style.display = "none";
+        //btnAdd.style.display = "none";
+        btnAdd.disabled = true;
     }
 
     let newDiv = document.createElement('input');
@@ -33,9 +33,10 @@ btnAdd.onclick = (e) => {
     btnRemove.onclick = () =>{
         newDiv.remove();
         btnRemove.remove();
-        btnAdd.style.display = "inline-block";
+        //btnAdd.style.display = "inline-block";
         c -= 1;
         pTest.innerHTML = `5/${c}`;
+        btnAdd.disabled = false;
     }
     //###############################
 

@@ -29,6 +29,7 @@ footer{
     border-radius: 50%;
     transition: 0.3s;
     display: inline-block;
+    cursor: pointer;
 }
 #btnDeleteAll:hover{
     background-color: white;
@@ -79,6 +80,7 @@ footer{
     border-radius: 50%;
     transition: 0.3s;
     text-align: center;
+    cursor: pointer;
 }
 #btnRemove:hover{
     background: #b60000;
