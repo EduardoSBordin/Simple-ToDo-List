@@ -35,6 +35,7 @@ btnAdd.onclick = (e) => {
     newDiv.id = 'newDiv';
     newDiv.type = 'text';
     newDiv.placeholder = 'Digite aqui...';
+    newDiv.autocomplete = 'off';
 
     // Delete button
     let btnRemove = document.createElement('button');
